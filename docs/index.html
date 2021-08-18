@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="#/">更多</a>
+        <a href="#/zh-cn/">测试</a>
+    </nav>
+    <div id="app"></div>
+    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        var num = 0;
+        mermaid.initialize({
+            startOnLoad: false
+        });
+
+        window.$docsify = {
+            loadSidebar: true,
+            coverpage: true,
+            markdown: {
+                renderer: {
+                    code: function(code, lang) {
+                        if (lang === "mermaid") {
+                            return (
+                                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+                            );
+                        }
+                        return this.origin.code.apply(this, arguments);
+                    }
+                }
+            },
+            count: {
+                countable: true,
+                fontsize: '0.9em',
+                color: 'rgb(90,90,90)',
+                language: 'chinese'
+            },
+            copyCode: {
+                buttonText: '复制到剪贴板',
+                errorText: '错误',
+                successText: '复制'
+            }
+
+        }
+    </script>
+    <!-- Latest v2.x.x -->
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+
+    <!-- 代码高亮 -->
+    <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code"></script>
+
+    <!-- Docsify v4 -->
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+
+</html>

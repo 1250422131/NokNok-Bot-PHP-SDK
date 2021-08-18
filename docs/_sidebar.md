@@ -1,0 +1,19 @@
+* [首页](/)
+- 概览展示
+  - [初步介绍](page/principle.md?id=初步介绍)
+    - [SDK介绍](page/principle.md?id=sdk介绍)
+    - [请求流程](page/principle.md?id=请求流程)
+    - [特别功能](page/principle.md?id=特别功能)
+- 安装程序
+  - [安装SDK](page/install.md?id=安装SDK)
+    - [拉取SDK文件](page/install.md?id=拉取SDK文件)
+    - [验证安装](page/install.md?id=验证安装)
+- 插件使用
+  - [信息配置](page/config.md?id=信息配置)
+    - [主要信息配置](page/config.md?id=主要信息配置)
+    - [插件配置](page/config.md?id=插件配置)
+- 插件编写
+  - [接口模板](page/plug_writing.md?id=接口模板)
+    - [为什么采用模板？](page/plug_writing.md?id=为什么采用模板？)
+  - [创建新插件](page/plug_writing.md?id=创建新插件)
+  - [插件引入](page/plug_writing.md?id=插件引入)
