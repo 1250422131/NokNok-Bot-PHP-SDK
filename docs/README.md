@@ -1,3 +1,3 @@
 # 首页
 
-> An awesome project.
+> 请先去查看教程,SDK项目介绍正在路上
