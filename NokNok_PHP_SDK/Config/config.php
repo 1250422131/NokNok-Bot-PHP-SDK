@@ -33,9 +33,9 @@
  */
 
 //请填写下自己的 机器人令牌 和 验证令牌 以及 机器人UID
-$GLOBALS['BotToken'] = '632ebe5dafaa3266417185ef4db9e95c';
-$GLOBALS['VerifyToken'] = '6ee300e3a87af224';
-$GLOBALS['BotUid'] = "100004436";
+$GLOBALS['BotToken'] = '';
+$GLOBALS['VerifyToken'] = '';
+$GLOBALS['BotUid'] = "";
 
 //API配置区域别乱改，当然你可以增加一些你自己的API，但不推荐在这里，这里仅仅为官方API留接口，以免混淆
 $GLOBALS['NokRequestUrl'] = 'https://openapi.noknok.cn';
